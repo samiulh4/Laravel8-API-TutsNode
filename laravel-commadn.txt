@@ -1,1 +1,4 @@
 composer create-project laravel/laravel example-app
+
+2) Running Seeder class directly
+php artisan db:seed --class=StudentSeeder

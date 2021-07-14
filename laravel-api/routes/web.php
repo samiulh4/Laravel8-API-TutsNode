@@ -19,3 +19,24 @@ Route::get('/', function () {
 });
 
 Route::get('sample', [TestController::class, 'sample']);
+
+// Route Middleware
+//Route::get('sample', [TestController::class, 'sample'])->middleware('api');
+
+// Group Middleware
+/*Route::group(['middleware' => ['mymiddleware']], function(){
+
+});*/
+
+/*Route::middleware('first', 'second')->group(function(){
+    
+});*/
+// Route Group & Route Prefix
+
+/*Route::prefix('admin')->group(function(){
+    Route::get('create-user', '');
+});*/
+
+Route::group(['prefix'=> 'admin'],function(){
+    //..
+});
