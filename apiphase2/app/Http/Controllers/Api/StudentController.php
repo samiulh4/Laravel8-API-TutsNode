@@ -89,11 +89,11 @@ class StudentController extends Controller
     // LOGOUT API
     public function logout()
     {
-        /*auth()->user()->tokens()->delete();
+        auth()->user()->tokens()->delete();
 
         return response()->json([
             "status" => 1,
             "message" => "Student logged out successfully"
-        ]);*/
+        ]);
     }
 }// end -:- StudentController
