@@ -1,0 +1,21 @@
+composer require laravel/sanctum
+
+
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
+
+php artisan migrate
+
+
+Update Route Service Provider
+Uncomment The Line $namespace = 'App\\Http\\Controllers';
+
+
+use in model
+use Laravel\Sanctum\HasApiTokens;
+use HasApiTokens;
+
+
+Content-Type => application/json
+Accept => application/json
+Authorization => Bearer 1|mR7v2u8kEHUWPepZnwZzxkrgGIgiPcezVaN9mCyG
